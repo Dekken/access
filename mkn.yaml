@@ -1,0 +1,11 @@
+#! clean build -Og 0
+
+name: access
+main: cpp.cpp
+
+dep:
+  - name: mkn.kul
+    version: master
+
+if_link:
+  nix_g++: -pthread
